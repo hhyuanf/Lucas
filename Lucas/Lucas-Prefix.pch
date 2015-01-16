@@ -1,0 +1,27 @@
+//
+// Prefix header for all source files of the 'Lucas' target in the 'Lucas' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#define NSLOG_CGRECT(string, rect) NSLog(@"%s %@", (string), NSStringFromCGRect(rect));
+
+#define BUTTON_X 8.0f
+#define BUTTON_Y 8.0f
+#define BUTTON_SPACE 8.0f
+#define BUTTON_HEIGHT 30.0f
+
+#define DONE_BUTTON_WIDTH 56.0f
+#define THUMBS_BUTTON_WIDTH 40.0f
+#define PRINT_BUTTON_WIDTH 40.0f
+#define EMAIL_BUTTON_WIDTH 40.0f
+#define MARK_BUTTON_WIDTH 40.0f
